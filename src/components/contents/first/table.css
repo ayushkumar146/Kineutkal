@@ -1,0 +1,165 @@
+.whole{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.table{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .table .t2{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Style for the outer table */
+
+@media screen and (min-width: 600px) {
+    .t2{
+    display: none;
+  }
+  .t1{
+    display: flex;
+  }
+  .t1  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    /* Style for column headings */
+   .t1 th {
+      background-color: inherit;
+      border: 1px solid #b80a0a;
+      color: #b80a0a;
+      text-align: center;
+      padding: 8px;
+      width: 10vw; /* Each column takes 10vw width */
+      height: 1vw; /* Column heading height matches width */
+    }
+    
+    /* Style for table cells */
+   .t1 td {
+      border: 1px solid #0a1fe2;
+      color: #0a1fe2;
+      text-align: center;
+      padding: 8px;
+    }
+    
+    /* Style for nested tables (subheadings) */
+   .t1 table table th {
+      background-color: black;
+      padding: 5px;
+      border-color: aquamarine;
+    }
+    
+    /* Style for nested table cells (subvalues) */
+   .t1 table table td {
+      border: none;
+      padding: 5px;
+    }
+    
+  }
+ 
+  @media screen and (max-width:600px) {
+    .t1{
+        display: none;
+    }
+    .t2{
+        display: flex;
+      }
+    .vertical-table {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .row {
+        border: 1px solid #ef0909;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10vhpx;
+        color: rgb(54, 42, 165);
+      }
+      
+      .heading {
+        flex-basis: 40%;
+      }
+      
+      .data {
+        flex-basis: 60%;
+        color: green;
+        /* align-items:end; */
+      }
+      
+      .row {
+        background-color:inherit;
+      }
+      
+      .row:hover {
+        background-color: #25e431;
+      }
+      
+  }
+  .btn{
+    height: 5vh;
+    width: 10vw;
+    font-weight: bolder;
+    font-size: 4vh;
+    color: rgb(36, 216, 20);
+    background-color: rgb(26, 81, 231);
+    /* margin-top: 4vh; */
+    margin-right: 3vw;
+  }
+  .btnh{
+    height: 5vh;
+    width: 10vw;
+    font-weight: bolder;
+    font-size: 4vh;
+    color: rgb(36, 216, 20);
+    background-color: rgb(26, 81, 231);
+    /* margin-top: 14vh; */
+    margin-left: 3vw;
+  }
+  .sath{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+  }
+  .a input[type=text]{
+          height: 4vh;
+          width: 10vw;
+          background-color: inherit;
+          border-color: inherit;
+          text-align: center;
+          color: yellow;
+  }
+  .b input[type=text]{
+    height: 4vh;
+    width: 2vw;
+    background-color: inherit;
+    border-color: blue;
+    text-align: center;
+    color: yellow;
+
+  }
+  .c input[type=text]{
+    height: 4vh;
+    width: 8vw;
+    background-color: inherit;
+    border-color: blue;
+    text-align: center;
+    color: yellow;
+
+  }
